@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'url'           => "https://www.nlp-institutes.net/de",
+    'url'           => "",
     'logFile'       => 'monitor.log',
     'sleepDuration' => 60*5,
     'db'            => 'monitor.sqlite',

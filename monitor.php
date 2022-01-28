@@ -3,6 +3,12 @@
     $config = require __DIR__ .'/config.php';
     $db = new SQLite3($config['db']);
 
+    if(empty($config['url'])){
+        echo "URL missing in config.php.";
+        echo PHP_EOL . "Abort." . PHP_EOL;
+        return;
+    }
+
     while(true){
         storeResult($config['url'], $db);
         sendAliveSignal($config['logFile']);
