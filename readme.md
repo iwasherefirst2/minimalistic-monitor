@@ -16,10 +16,12 @@ For example, for PHP 7.4 the install command would look like this:
 
 Adjust configuration in `config.php` possible parameters are
 
- - url: The site you want to monitor
- - logFile: A log file to see if daemon still running
- - sleepDuration: Time between watch alive requests to your server
- - db: The SQLite databasename 
+Attribut | Description
+--- | ---
+url | The site you want to monitor
+logFile | A log file to see if daemon still running
+sleepDuration | Time between watch alive requests to your server
+db | The SQLite databasename 
 
 Next, create the SQLite database by running 
 
